@@ -1,7 +1,3 @@
-let numberOfTosses = 1;
-let numberOfPeter = 0;
-let numberOfBenjamin = 0;
-
 const startButton = document.querySelector('#startButton');
 const tossButton = document.querySelector('#tossButton');
 const endButton = document.querySelector('#endButton');
@@ -13,11 +9,14 @@ startButton.addEventListener('click', () => {
 
 
 tossButton.addEventListener('click', () => {
+    let numberOfTosses = 1;
+    let numberOfPeter = 0;
+    let numberOfBenjamin = 0;
     const totalTosses = numberOfTosses++;
     const randomToss = Math.ceil(Math.random() * 2);
     displayToss(randomToss);
-    displayCount(randomToss);
-    displayProbabilities(totalTosses);
+    displayCount(randomToss, numberOfPeter, numberOfBenjamin);
+    displayProbabilities(numberOfPeter, totalTosses);
     displayTotalTosses(totalTosses);
 });
 
