@@ -1,0 +1,13 @@
+/* main container */
+#mainContainer {
+  display: none;
+}
+
+.main-container {
+  flex-direction: column;
+  align-items: center;
+
+  & > h1, img {
+    margin-bottom: 32px;
+  }
+}

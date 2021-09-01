@@ -1,0 +1,23 @@
+@use "styles/_abstracts" as *;
+@use "styles/_atoms";
+@use "styles/_molecules";
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 32px;
+  font-family: $font-family-primary;
+  color: $color-base-dark;
+  background-color: $color-primary;
+}
+
+body {
+  max-width: 360px;
+  margin: 32px auto;
+  padding: 48px 32px 64px;
+  background-color: $color-base-light;
+}
