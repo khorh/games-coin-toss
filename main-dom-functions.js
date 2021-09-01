@@ -1,3 +1,6 @@
+import { calculateProbabilityOfPeter } from "./main-probability-functions";
+import { calculateProbabilityOfBenjamin } from "./main-probability-functions";
+
 const headerContainerQuery = document.querySelector('#headerContainer');
 const mainContainerQuery = document.querySelector('#mainContainer');
 const footerContainerQuery = document.querySelector('#footerContainer');
@@ -7,7 +10,6 @@ const totalPeterQuery = document.querySelector('#totalPeter');
 const percentageBenjaminQuery = document.querySelector('#percentageBenjamin');
 const totalBenjaminQuery = document.querySelector('#totalBenjamin');
 const totalTossesQuery = document.querySelector('#totalTosses');
-
 
 /**
  * HEADER CONTAINER
@@ -51,28 +53,6 @@ const displayCount = (randomToss, numberOfPeter, numberOfBenjamin) => {
         numberOfBenjamin +=1;
         totalBenjaminQuery.innerText = numberOfBenjamin;
     }
-};
-
-/**
- * FOOTER CONTAINER
- * Coin toss function to calculate the probability of Peter
- * @param {number} numberOfPeter which is current number of tosses for Peter
- * @param {number} totalTosses which is the total number of tosses
- * @returns {number} roundPercentagePeter for probability of Peter
- */
-export const calculateProbabilityOfPeter = (numberOfPeter, totalTosses) => {
-    const calculatePercentagePeter = numberOfPeter/totalTosses*100;
-    return Number(calculatePercentagePeter.toFixed(0));
-};
-
-/**
- * FOOTER CONTAINER
- * Coin toss function to calculate the probability of Benjamin
- * @param {number} percentageOfPeter which is the probability of Peter
- * @returns {number} percentageBenjamin for probability of Benjamin
- */
-export const calculateProbabilityOfBenjamin = (percentageOfPeter) => {
-    return 100 - percentageOfPeter;
 };
 
 /**
