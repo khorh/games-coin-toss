@@ -1,0 +1,22 @@
+{
+  "name": "games-coin-toss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khorh/games-coin-toss.git"
+  },
+  "author": "Helen Khor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khorh/games-coin-toss/issues"
+  },
+  "homepage": "https://github.com/khorh/games-coin-toss#readme",
+  "devDependencies": {
+    "jest": "^27.1.0"
+  }
+}
