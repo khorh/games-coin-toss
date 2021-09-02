@@ -1,14 +1,9 @@
-const startButton = document.querySelector('#startButton');
-const tossButton = document.querySelector('#tossButton');
-const endButton = document.querySelector('#endButton');
-const resetButton = document.querySelector('#resetButton')
-
-startButton.addEventListener('click', () => {
+document.querySelector('#startButton').addEventListener('click', () => {
     startToss();
 });
 
 
-tossButton.addEventListener('click', () => {
+document.querySelector('#tossButton').addEventListener('click', () => {
     let numberOfTosses = 1;
     let numberOfPeter = 0;
     let numberOfBenjamin = 0;
@@ -20,10 +15,10 @@ tossButton.addEventListener('click', () => {
     displayTotalTosses(totalTosses);
 });
 
-endButton.addEventListener('click', () => {
+document.querySelector('#endButton').addEventListener('click', () => {
     endToss();
 });
 
-resetButton.addEventListener('click', () => {
+document.querySelector('#resetButton').addEventListener('click', () => {
     document.location.reload();
 });

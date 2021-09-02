@@ -1,5 +1,5 @@
-import { calculateProbabilityOfPeter } from "./main-probability-functions";
-import { calculateProbabilityOfBenjamin } from "./main-probability-functions";
+import { calculateProbabilityOfPeter } from "./main-functions";
+import { calculateProbabilityOfBenjamin } from "./main-functions";
 
 describe ("probability tests for Peter", () => {
     test("probability of Peter should return 10", () => {
