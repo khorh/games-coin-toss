@@ -1,6 +1,3 @@
-import { calculateProbabilityOfPeter } from "./main-functions";
-import { calculateProbabilityOfBenjamin } from "./main-functions";
-
 describe ("probability tests for Peter", () => {
     test("probability of Peter should return 10", () => {
         expect(calculateProbabilityOfPeter(1, 10)).toBe(10);
