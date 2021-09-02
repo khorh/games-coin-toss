@@ -9,15 +9,27 @@
 }
 
 html {
+  background-color: $color-primary-main;
   font-size: 32px;
   font-family: $font-family-primary;
   color: $color-base-dark;
-  background-color: $color-primary;
+
+  @include xs-screen {
+    background-color: $color-base-light;
+  }
 }
 
 body {
   max-width: 360px;
   margin: 32px auto;
+  border-radius: 16px;
+  border: 2px solid $color-base-dark;
   padding: 48px 32px 64px;
   background-color: $color-base-light;
+
+  @include xs-screen {
+    margin: 0 auto;
+    border-radius: 0;
+    border: none;
+  }
 }
