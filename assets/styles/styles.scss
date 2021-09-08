@@ -1,6 +1,6 @@
-@use "_abstracts/index" as *;
-@use "_atoms/index";
-@use "_molecules/index";
+@use "./_abstracts" as *;
+@use "./_atoms";
+@use "./_molecules";
 
 * {
   margin: 0;

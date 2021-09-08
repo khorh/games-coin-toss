@@ -1,19 +1,125 @@
-/* Error: There's already a module with namespace "index".
- *   ,
- * 2 | @use "_atoms/index";
- *   | =================== original @use
- * 3 | @use "_molecules/index";
- *   | ^^^^^^^^^^^^^^^^^^^^^^^ new @use
- *   '
- *   styles.scss 3:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: There's already a module with namespace \"index\".\a   \2577 \a 2 \2502  @use \"_atoms/index\";\a   \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  original @use\a 3 \2502  @use \"_molecules/index\";\a   \2502  ^^^^^^^^^^^^^^^^^^^^^^^ new @use\a   \2575 \a   styles.scss 3:1  root stylesheet";
+/* font families */
+/* colors */
+/* button */
+.button {
+  width: 100%;
+  margin-bottom: 16px;
+  border: 3px solid #202020;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 0.9375rem;
+  cursor: pointer;
 }
+.button--state--positive {
+  background-color: #ffd700;
+}
+.button--state--negative {
+  background-color: #ffffff;
+}
+
+/* image */
+.coin {
+  max-width: 224px;
+  max-height: 224px;
+}
+
+/* typography */
+h1, h2, p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.875rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+}
+
+p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 0.9375rem;
+}
+
+/* footer container */
+#footerContainer {
+  display: none;
+}
+
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+}
+.footer-container > h1, .footer-container h2, .footer-container p {
+  margin-bottom: 32px;
+}
+
+/* header container */
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-container > h1, .header-container p {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.header-container > img {
+  margin-bottom: 32px;
+}
+
+/* main container */
+#mainContainer {
+  display: none;
+}
+
+.main-container {
+  flex-direction: column;
+  align-items: center;
+}
+.main-container > h1, .main-container img {
+  margin-bottom: 32px;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  background-color: #f5f5f5;
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  color: #202020;
+}
+@media (max-width: 575px) {
+  html {
+    background-color: #ffffff;
+  }
+}
+
+body {
+  max-width: 360px;
+  margin: 32px auto;
+  border-radius: 16px;
+  border: 2px solid #202020;
+  padding: 48px 32px 64px;
+  background-color: #ffffff;
+}
+@media (max-width: 575px) {
+  body {
+    margin: 0 auto;
+    border-radius: 0;
+    border: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
