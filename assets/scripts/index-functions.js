@@ -19,10 +19,10 @@ const startToss = () => {
 const displayToss = (randomToss) => {
     const tossImageQuery = document.querySelector('#tossImage');
     if (randomToss === 1) {
-        tossImageQuery.setAttribute('src', '../images/coin-toss-peter.png');
+        tossImageQuery.setAttribute('src', '../assets/images/coin-toss-peter.png');
         tossImageQuery.setAttribute('alt', 'peter rabbit 50p coin');
     } else if (randomToss === 2) {
-        tossImageQuery.setAttribute('src','../images/coin-toss-benjamin.png');
+        tossImageQuery.setAttribute('src','../assets/images/coin-toss-benjamin.png');
         tossImageQuery.setAttribute('alt', 'benjamin rabbit 50p coin');
     }
 };
