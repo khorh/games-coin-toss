@@ -1,4 +1,4 @@
-import { calculateProbabilityOfPeter, calculateProbabilityOfBenjamin } from "./index-probability-functions";
+import { calculateProbabilityOfPeter, calculateProbabilityOfBenjamin } from "../scripts/index-probability-functions";
 
 describe ("probability tests for Peter", () => {
     test("probability of Peter should return 10", () => {
