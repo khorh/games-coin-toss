@@ -12,11 +12,11 @@
   line-height: 0.9375rem;
   cursor: pointer;
 
-  &--state--positive {
+  &__state--positive {
     background-color: $color-secondary-main;
   }
 
-  &--state--negative {
+  &__state--negative {
     background-color: $color-base-light;
   }
 }

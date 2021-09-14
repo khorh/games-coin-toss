@@ -12,10 +12,10 @@
   line-height: 0.9375rem;
   cursor: pointer;
 }
-.button--state--positive {
+.button__state--positive {
   background-color: #ffd700;
 }
-.button--state--negative {
+.button__state--negative {
   background-color: #ffffff;
 }
 
@@ -132,3 +132,5 @@ body {
     border: none;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
