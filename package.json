@@ -1,7 +1,7 @@
 {
   "name": "games-coin-toss",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Javascript based game for coin tossing.",
   "main": "index.html",
   "scripts": {
     "test": "jest"
